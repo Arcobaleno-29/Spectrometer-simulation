@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+
+# Separate external repository
+pyopticaltable/
