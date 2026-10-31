@@ -1,17 +1,27 @@
 # Spectrometer-simulation
 
 ## Overview
-This repository contains a numerical simulation pipeline for optical spectrographs.
+This repository contains a numerical simulation pipeline for optical spectrographs (transmission-type).
 
 ## Notebooks
 
-* **`Simulation_spec.ipynb`** - Primary simulation notebook. Simulate the output of the spectrometer configuration, as well as measuring the theoretical and simulated spectral resolution for comparison.
+* **`spectrograph_simulation.ipynb`** - Primary simulation notebook. Simulate the output of the spectrometer configuration, as well as measuring the theoretical and simulated spectral resolution for comparison.
+  
+* **`config.py`** - Defines configuration classes for the optical system and detector, including validation of input parameters.
+
+* **`optics.py`** - Contains reusable optical modeling functions used by the simulation notebook.
 
 * **`Net_resolution.ipynb`** - Parameter sensitivity analysis. Investigate the impact of each spectrometer's parameter: slit width, diffraction grating and pixel on the overall spectral resolution (which is the full-width half maximum - FWHM). We utilize a self-calibrating spectrograph class to ensure other parameters are optimized for each fixed parameters.
 
 > **Note:** Additional exploratory notebooks and modules are currently under development.
 
-## Installation
+## Dependencies
+The simulation uses Python with the following libraries:
+* NumPy
+* Astropy
+* POPPY
+* Jupyter Notebook or JupyterLab
+
 Install the primary dependency, [POPPY] (Physical Optics Propagation in Python)
 ```bash
 pip install poppy
