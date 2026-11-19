@@ -34,3 +34,6 @@ Tran Vu Minh Anh
 If you use this repository or its underlying frameworks, please reference the following:
 * POPPY Documentation: https://poppy-optics.readthedocs.io/
 * POPPY software citation: Perrin, M. D., Soummer, R., Elliott, E. M., Lajoie, C.-P., & Sivaramakrishnan, A. (2012). POPPY: Physical Optics Propagation in Python. Astrophysics Source Code Library, ascl:1602.018.
+
+## License
+The source code and notebooks are available under the [MIT License](LICENSE).
